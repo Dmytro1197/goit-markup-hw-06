@@ -297,7 +297,7 @@ img {
 }
 .mob-menu-list-icon {
   display: flex;
-  gap: 56px;
+  gap: 32px;
 }
 .mob-menu-item-icon {
   width: 40px;
@@ -873,7 +873,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 320px;
   min-height: 584px;
   border-radius: 4px;
   background-color: var(--dairy, #fcfcfc);

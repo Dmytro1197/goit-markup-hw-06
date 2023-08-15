@@ -10,8 +10,14 @@
   .mob-menu-tel-link {
     font-size: 36px;
   }
+  .mob-menu-list-icon {
+    gap: 56px;
+  }
   .footer-input {
     width: 398px;
+  }
+  .modal {
+    width: 408px;
   }
 }
 
