@@ -260,6 +260,11 @@ img {
   letter-spacing: 0.02em;
   transition: color var(--hover-transition);
 }
+/* .mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-menu-link:active {
+  color: var(--ocean);
+} */
 .mob-menu-address {
 }
 .mob-menu-address-list {
@@ -274,7 +279,7 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--slate, #434455);
+  color: var(--iris);
   transition: color var(--hover-transition);
 }
 .mob-menu-tel-link:hover,
