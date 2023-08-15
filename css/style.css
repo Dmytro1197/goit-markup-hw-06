@@ -568,11 +568,11 @@ img {
 
 .footer {
   background: var(--navy-blue);
-  padding-top: 98px;
-  padding-bottom: 104px;
 }
 
 .footer-flex {
+  padding-top: 98px;
+  padding-bottom: 104px;
   display: flex;
   flex-direction: column;
   align-items: center;
