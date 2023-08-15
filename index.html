@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="./index.html"
@@ -59,8 +59,85 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-open-btn" data-menu-open>
+          <svg class="header-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-header-open-btn"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="menu-close-btn button" data-menu-close>
+            <svg class="menu-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link nav" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link nav" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link nav" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-menu-address address">
+            <ul class="mob-menu-address-list list">
+              <li class="mob-menu-address-item">
+                <a class="mob-menu-tel-link link nav" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-address-item">
+                <a
+                  class="mob-menu-mail-link link nav"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-menu-list-icon list">
+            <li class="mob-menu-item-icon">
+              <a class="mob-menu-icon-link link" href="">
+                <svg class="footer-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-item-icon">
+              <a class="mob-menu-icon-link link" href="">
+                <svg class="footer-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-item-icon">
+              <a class="mob-menu-icon-link link" href="">
+                <svg class="footer-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-item-icon">
+              <a class="mob-menu-icon-link link" href="">
+                <svg class="footer-link-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main class="main">
       <section class="hero">
         <div class="container container-hero">
@@ -131,6 +208,7 @@
           <ul class="examples-list list">
             <li class="examples-list-item">
               <img
+                srcset="./images/laptop.jpg 1x, ./images/laptop-2x.jpg 2x"
                 class="examples-list-img"
                 src="./images/laptop.jpg"
                 alt="laptop"
@@ -140,6 +218,10 @@
             </li>
             <li class="examples-list-item">
               <img
+                srcset="
+                  ./images/smartphone.jpg    1x,
+                  ./images/smartphone-2x.jpg 2x
+                "
                 class="examples-list-img"
                 src="./images/smartphone.jpg"
                 alt="smartphone"
@@ -149,6 +231,10 @@
             </li>
             <li class="examples-list-item">
               <img
+                srcset="
+                  ./images/hand-smartphone.jpg    1x,
+                  ./images/hand-smartphone-2x.jpg 2x
+                "
                 class="examples-list-img"
                 src="./images/hand-smartphone.jpg"
                 alt="hand with smartphone"
@@ -165,6 +251,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x"
                 class="team-list-img"
                 src="./images/team1.jpg"
                 alt="photo by mark guerrero"
@@ -208,6 +295,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team2.jpg 1x, ./images/team2-2x.jpg 2x"
                 class="team-list-img"
                 src="./images/team2.jpg"
                 alt="photo by tom ford"
@@ -251,6 +339,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team3.jpg 1x, ./images/team3-2x.jpg 2x"
                 class="team-list-img"
                 src="./images/team3.jpg"
                 alt="photo by camila garcia"
@@ -294,6 +383,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team4.jpg 1x, ./images/team4-2x.jpg 2x"
                 class="team-list-img"
                 src="./images/team4.jpg"
                 alt="photo by daniel wilson"
@@ -388,7 +478,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-flex">
         <div class="container-footer">
           <a class="footer-logo link" href="./index.html"
@@ -452,7 +542,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close-btn">
@@ -538,5 +628,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>

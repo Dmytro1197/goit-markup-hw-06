@@ -7,6 +7,12 @@
   .hero-title {
     font-size: 36px;
   }
+  .mob-menu-tel-link {
+    font-size: 36px;
+  }
+  .footer-input {
+    width: 398px;
+  }
 }
 
 /* Tablet -------------------------------------------------------*/
@@ -69,6 +75,46 @@
     font-size: 56px;
     width: 496px;
     line-height: 1.11;
+  }
+  .header-open-btn {
+    display: none;
+  }
+  .mob-menu {
+    display: none;
+  }
+  .header-navigation-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-flex {
+    padding: 98px 164px 98px 108px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: flex-start;
+  }
+  .container-footer {
+    align-items: flex-start;
+  }
+  .container-footer-icon {
+    align-items: flex-start;
+  }
+  .container-footer-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-input {
+    width: 264px;
   }
 }
 
@@ -157,5 +203,35 @@
         ),
         url(../images/hero-bg-2x.jpg);
     }
+  }
+  .header-address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-address-item {
+    font-size: 16px;
+  }
+  .current-page::after {
+    bottom: -1px;
+  }
+  .footer-flex {
+    padding: 100px 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .container-footer {
+    margin-right: 120px;
+  }
+  .container-footer-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container-footer-icon {
+    margin-right: 80px;
+  }
+  .footer-input {
+    opacity: 1;
   }
 }
