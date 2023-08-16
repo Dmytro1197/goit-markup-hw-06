@@ -19,6 +19,9 @@
   .modal {
     width: 408px;
   }
+  .portfolio-filter-list {
+    gap: 16px 24px;
+  }
 }
 
 /* Tablet -------------------------------------------------------*/
@@ -121,6 +124,22 @@
   }
   .footer-input {
     width: 264px;
+  }
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .portfolio-filter-list {
+    margin-bottom: 62px;
+    justify-content: center;
+  }
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -239,5 +258,18 @@
   }
   .footer-input {
     opacity: 1;
+  }
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+  .portfolio-filter-list {
+    margin-bottom: 72px;
+  }
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
   }
 }
